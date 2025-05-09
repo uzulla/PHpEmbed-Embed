@@ -53,7 +53,7 @@ class ExtractorFactory
             }
 
             // Check if $host is a subdomain of $adapterHost.
-            if (preg_match('/^([a-z0-9-]+)\.' . preg_quote($adapterHost, '/') . '$/i', $host, $matches)) {
+            if (substr($host, -strlen($adapterHost) + 1) === ".{$adapterHost}") {
                 $class = $adapter;
                 break;
             }
