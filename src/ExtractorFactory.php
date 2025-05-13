@@ -53,7 +53,7 @@ class ExtractorFactory
             }
 
             // Check if $host is a subdomain of $adapterHost.
-            if (substr($host, -strlen($adapterHost) + 1) === ".{$adapterHost}") {
+            if (substr($host, -strlen($adapterHost) - 1) === ".{$adapterHost}") {
                 $class = $adapter;
                 break;
             }
