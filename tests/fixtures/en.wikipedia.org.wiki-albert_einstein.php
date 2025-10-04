@@ -6,9 +6,11 @@ return [
     'authorUrl' => null,
     'cms' => 'mediawiki',
     'code' => null,
-    'description' => 'Albert Einstein ( EYEN-styne; German: [ˈalbɛʁt ˈʔaɪnʃtaɪn] (listen); 14 March 1879 – 18 April 1955) was a German-born theoretical physicist, widely acknowledged to be one of the greatest physicists of all time. Einstein is known widely for developing the theory of relativity, but he also made important contributions to the development of the theory of quantum mechanics. Relativity and quantum mechanics are together the two pillars of modern physics. His mass–energy equivalence formula E = mc2, which arises from relativity theory, has been dubbed "the world\'s most famous equation". His work is also known for its influence on the philosophy of science. He received...',
+    'description' => 'Albert Einstein ( EYEN-styne; German: [ˈalbɛɐt ˈʔaɪnʃtaɪn] ; 14 March 1879 – 18 April 1955) was a German-born theoretical physicist who is widely held to be one of the greatest and most influential scientists of all time. Best known for developing the theory of relativity, Einstein also made important contributions to quantum mechanics, and was thus a central figure in the revolutionary reshaping of the scientific understanding of nature that modern physics accomplished in the first decades of the twentieth century. His mass–energy equivalence formula E = mc2, which arises from relativity theory, has been called "the world\'s most famous equation". He received the 1921 Nobel Prize in Physics "for his services to theoretical physics, and especially for his discovery of the law...',
     'favicon' => 'https://en.wikipedia.org/static/favicon/wikipedia.ico',
-    'feeds' => [],
+    'feeds' => [
+        'https://en.wikipedia.org/w/index.php?title=Special:RecentChanges&feed=atom'
+    ],
     'icon' => 'https://en.wikipedia.org/static/apple-touch/wikipedia.png',
     'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Einstein_1921_by_F_Schmutzer_-_restoration.jpg/1200px-Einstein_1921_by_F_Schmutzer_-_restoration.jpg',
     'keywords' => [],
@@ -41,7 +43,7 @@ return [
             ]
         ],
         'datePublished' => '2001-11-05T18:26:16Z',
-        'dateModified' => '2021-04-04T01:52:51Z',
+        'dateModified' => '2024-06-04T23:38:54Z',
         'image' => 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Einstein_1921_by_F_Schmutzer_-_restoration.jpg',
         'headline' => 'German-born theoretical physicist; developer of the theory of relativity (1879–1955)'
     ],
@@ -52,11 +54,11 @@ return [
         'title' => 'Albert Einstein',
         'extract' => '<p class="mw-empty-elt">
 
+
+
 </p>
 
-<p class="mw-empty-elt">
-</p>
-<p><b>Albert Einstein</b> (<span></span> <i title="English pronunciation respelling"><span>EYEN</span>-styne</i>; <small>German: </small><span title="Representation in the International Phonetic Alphabet (IPA)">[ˈalbɛʁt ˈʔaɪnʃtaɪn]</span> <span>(<span><span><span></span>listen</span></span>)</span>; 14 March 1879&#160;– 18 April 1955) was a German-born theoretical physicist, widely acknowledged to be one of the greatest physicists of all time. Einstein is known widely for developing the theory of relativity, but he also made important contributions to the development of the theory of quantum mechanics. Relativity and quantum mechanics are together the two pillars of modern physics.  His mass–energy equivalence formula <span><i>E</i> = <i>mc</i><sup>2</sup></span>, which arises from relativity theory, has been dubbed "the world\'s most famous equation". His work is also known for its influence on the philosophy of science. He received</p>...'
+<p><b>Albert Einstein</b> (<span></span> <i title="English pronunciation respelling"><span>EYEN</span>-styne</i>; <span>German:</span> <span lang="de-Latn-fonipa">[ˈalbɛɐt<span> </span>ˈʔaɪnʃtaɪn]</span> ; 14 March 1879 – 18 April 1955) was a German-born theoretical physicist who is widely held to be one of the greatest and most influential scientists of all time. Best known for developing the theory of relativity, Einstein also made important contributions to quantum mechanics, and was thus a central figure in the revolutionary reshaping of the scientific understanding of nature that modern physics accomplished in the first decades of the twentieth century. His mass–energy equivalence formula <span><i>E</i> = <i>mc</i><sup>2</sup></span>, which arises from relativity theory, has been called "the world\'s most famous equation". He received the 1921 Nobel Prize in Physics "for his services to theoretical physics, and especially for his discovery of the law</p>...'
     ],
     'allLinkedData' => [
         [
@@ -79,7 +81,7 @@ return [
                 ]
             ],
             'datePublished' => '2001-11-05T18:26:16Z',
-            'dateModified' => '2021-04-04T01:52:51Z',
+            'dateModified' => '2024-06-04T23:38:54Z',
             'image' => 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Einstein_1921_by_F_Schmutzer_-_restoration.jpg',
             'headline' => 'German-born theoretical physicist; developer of the theory of relativity (1879–1955)'
         ]

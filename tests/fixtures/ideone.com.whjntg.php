@@ -12,7 +12,7 @@ return [
         'ratio' => null
     ],
     'description' => 'Ideone is something more than a pastebin; it\'s an online compiler and debugging tool which allows to compile and run code online in more than 40 programming languages.',
-    'favicon' => 'https://stx1.ideone.com/gfx2/img/favicon.png',
+    'favicon' => 'https://d2c5ubcnqbm27w.cloudfront.net/gfx2/img/favicon.png',
     'feeds' => [],
     'icon' => null,
     'image' => 'http://profile.ak.fbcdn.net/hprofile-ak-prn1/50232_245768360841_3377786_q.jpg',

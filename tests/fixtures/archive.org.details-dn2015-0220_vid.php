@@ -43,8 +43,8 @@ return [
     ],
     'oEmbed' => [],
     'api' => [
-        'server' => 'ia802600.us.archive.org',
-        'dir' => '/20/items/dn2015-0220_vid',
+        'server' => 'ia801600.us.archive.org',
+        'dir' => '/34/items/dn2015-0220_vid',
         'metadata' => [
             'identifier' => [
                 'dn2015-0220_vid'
@@ -786,11 +786,12 @@ return [
             '/dn2015-0220_vid_files.xml' => [
                 'source' => 'original',
                 'format' => 'Metadata',
-                'md5' => '745ea2f6dde93e4b70b1c0b238d4c0e2'
+                'md5' => 'c8085d21bd5d528af0697f7d1cfff599',
+                'summation' => 'md5'
             ],
             '/dn2015-0220_vid_meta.xml' => [
                 'source' => 'original',
-                'mtime' => '1542757137',
+                'mtime' => '1675274129',
                 'size' => '1973',
                 'format' => 'Metadata',
                 'md5' => '6a144c80a58ab5f08c0ecffdb580954a',
@@ -799,12 +800,12 @@ return [
             ]
         ],
         'misc' => [
-            'image' => 'https://ia802600.us.archive.org/20/items/dn2015-0220_vid/dn2015-0220.gif',
+            'image' => 'https://ia801600.us.archive.org/34/items/dn2015-0220_vid/dn2015-0220.gif',
             'collection-title' => 'Democracy Now!'
         ],
         'item' => [
-            'downloads' => 132,
-            'month' => 2,
+            'downloads' => 156,
+            'month' => 0,
             'item_size' => 3667677269,
             'files_count' => 68,
             'item_count' => null,

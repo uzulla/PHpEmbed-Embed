@@ -2,30 +2,25 @@
 declare(strict_types = 1);
 
 return [
-    'authorName' => '@La_SER',
-    'authorUrl' => 'https://twitter.com/La_SER',
+    'authorName' => 'Cadena SER',
+    'authorUrl' => null,
     'cms' => null,
-    'code' => [
-        'html' => '<iframe src="https://play.cadenaser.com/widget/audio/001RD010000004275766/" frameborder="0" width="100%" height="360" allowTransparency="true"></iframe>',
-        'width' => null,
-        'height' => 360,
-        'ratio' => null
-    ],
+    'code' => null,
     'description' => 'Ana Pontón, candidata del BNG; Xoaquín Fernández Leiceaga, candidato del PSdG-PSOE; Luis Villares, candidato de En Marea, y Pedro Puy, candidato del PP por A Coruña y coordinador del programa electoral de Alberto Núñez Feijoo debaten en Hoy por Hoy',
-    'favicon' => 'https://play.cadenaser.com/bundles/playserweb/img/favicon.ico?v3.3',
+    'favicon' => 'https://cadenaser.com/pf/resources/img/favicon.png?d=1014',
     'feeds' => [],
-    'icon' => 'https://play.cadenaser.com/bundles/playserweb/img/apple-touch-icon-57x57.png?v3.3',
-    'image' => 'https://cadenaser00.epimg.net/iconos/v1.x/v1.0/redes/imagenes_og/programas_v2/2019/imagen-control-hoy-por-hoy-angels.jpg',
+    'icon' => null,
+    'image' => 'https://cadenaser.com/resizer/a9WQ8rJ3QL6pdxxPeqscG8rnPHU=/1200x630/smart/filters:quality(70)/urotrosfiles.media.streamtheworld.com/otrosfiles/objetos/logos/cadenaser-logo_01.png',
     'keywords' => [],
     'language' => 'es',
     'languages' => [],
     'license' => null,
-    'providerName' => 'Cadena SER',
-    'providerUrl' => 'https://play.cadenaser.com',
-    'publishedTime' => '2016-09-16 00:00:00',
+    'providerName' => 'cadena SER',
+    'providerUrl' => 'https://cadenaser.com',
+    'publishedTime' => null,
     'redirect' => null,
-    'title' => 'Debate electoral gallego, en \'Hoy por Hoy\' | Hoy por Hoy | Audio | Cadena SER',
-    'url' => 'https://play.cadenaser.com/audio/001RD010000004275766/',
+    'title' => 'Debate electoral gallego, en \'Hoy por Hoy\' | Cadena Ser',
+    'url' => 'https://cadenaser.com/audio/001RD010000004275766/',
     'linkedData' => [
         '@context' => 'https://schema.org',
         '@type' => 'BreadcrumbList',
@@ -34,16 +29,16 @@ return [
                 '@type' => 'ListItem',
                 'position' => 1,
                 'item' => [
-                    '@id' => 'https://play.cadenaser.com/',
-                    'name' => 'PlaySER'
+                    '@id' => 'https://cadenaser.com',
+                    'name' => 'Inicio'
                 ]
             ],
             [
                 '@type' => 'ListItem',
                 'position' => 2,
                 'item' => [
-                    '@id' => 'https://play.cadenaser.com/programa/hoy_por_hoy/',
-                    'name' => 'Hoy por Hoy'
+                    '@id' => 'https://cadenaser.com/audio/001RD010000004275766/',
+                    'name' => 'Audio 001RD010000004275766'
                 ]
             ]
         ]
@@ -58,31 +53,18 @@ return [
                     '@type' => 'ListItem',
                     'position' => 1,
                     'item' => [
-                        '@id' => 'https://play.cadenaser.com/',
-                        'name' => 'PlaySER'
+                        '@id' => 'https://cadenaser.com',
+                        'name' => 'Inicio'
                     ]
                 ],
                 [
                     '@type' => 'ListItem',
                     'position' => 2,
                     'item' => [
-                        '@id' => 'https://play.cadenaser.com/programa/hoy_por_hoy/',
-                        'name' => 'Hoy por Hoy'
+                        '@id' => 'https://cadenaser.com/audio/001RD010000004275766/',
+                        'name' => 'Audio 001RD010000004275766'
                     ]
                 ]
-            ]
-        ],
-        [
-            '@context' => 'https://schema.org',
-            '@type' => 'Corporation',
-            'name' => 'cadenaser.com',
-            'url' => 'https://cadenaser.com',
-            'logo' => 'https://play.cadenaser.com/bundles/playserweb/img/logo_playser.svg',
-            'sameAs' => [
-                'https://www.facebook.com/cadenaser',
-                'https://twitter.com/La_SER',
-                'https://plus.google.com/+cadenaser/',
-                'https://www.youtube.com/user/cadenaser'
             ]
         ]
     ]

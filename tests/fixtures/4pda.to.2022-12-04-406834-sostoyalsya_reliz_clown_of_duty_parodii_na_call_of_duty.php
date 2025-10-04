@@ -11,7 +11,9 @@ return [
     'feeds' => [],
     'icon' => 'https://4pda.to/s/as6ywymaTWM6wnea1mxojxCz0Yet7IeumfOBnaxb.png',
     'image' => 'https://i.4pda.ws/s/as6yueQrUwnKt0LgJ5m26uBjbZsccTet21FqwJkADfGw.jpg?v=1669981373',
-    'keywords' => ['состоялся релиз clown of duty — пародии на call of duty'],
+    'keywords' => [
+        'состоялся релиз clown of duty — пародии на call of duty'
+    ],
     'language' => 'ru-RU',
     'languages' => [],
     'license' => null,
@@ -23,5 +25,5 @@ return [
     'url' => 'https://4pda.to/2022/12/04/406834/sostoyalsya_reliz_clown_of_duty_parodii_na_call_of_duty/',
     'linkedData' => [],
     'oEmbed' => [],
-    'allLinkedData' => [],
+    'allLinkedData' => []
 ];

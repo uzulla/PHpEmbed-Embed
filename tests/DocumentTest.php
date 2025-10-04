@@ -28,7 +28,7 @@ class DocumentTest extends TestCase
         $extractor = self::getEmbed()->get('http://www.wired.com/?p=2064839');
         $document = $extractor->getDocument();
 
-        $expected = 23;
+        $expected = 3;
 
         $this->assertCount($expected, $document->select('.//p')->nodes());
         $this->assertCount($expected, $document->selectCss('p')->nodes());

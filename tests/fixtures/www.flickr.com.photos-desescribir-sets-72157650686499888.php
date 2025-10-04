@@ -107,7 +107,6 @@ return [
                 'https://instagram.com/flickr',
                 'https://flickr.tumblr.com',
                 'https://twitter.com/flickr',
-                'https://plus.google.com/+flickr',
                 'https://www.pinterest.com/flickr'
             ]
         ],

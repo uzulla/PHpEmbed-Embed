@@ -3,10 +3,10 @@ declare(strict_types = 1);
 
 return [
     'authorName' => 'Gabin Aureche',
-    'authorUrl' => 'https://codepen.io/Zhouzi/',
+    'authorUrl' => 'https://codepen.io/Zhouzi',
     'cms' => null,
     'code' => [
-        'html' => '<iframe id="cp_embed_JoRazP" src="https://codepen.io/Zhouzi/embed/preview/JoRazP?height=300&amp;slug-hash=JoRazP&amp;default-tabs=js,result&amp;host=https://codepen.io" title="TheaterJS" scrolling="no" frameborder="0" height="300" allowtransparency="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe>',
+        'html' => '<iframe id="cp_embed_JoRazP" src="https://codepen.io/Zhouzi/embed/preview/JoRazP?default-tabs=js%2Cresult&amp;height=300&amp;host=https%3A%2F%2Fcodepen.io&amp;slug-hash=JoRazP" title="TheaterJS" scrolling="no" frameborder="0" height="300" allowtransparency="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe>',
         'width' => 800,
         'height' => 300,
         'ratio' => 37.5
@@ -15,7 +15,7 @@ return [
     'favicon' => 'https://codepen.io/favicon.ico',
     'feeds' => [],
     'icon' => null,
-    'image' => 'https://assets.codepen.io/99102/internal/screenshots/pens/JoRazP.default.png?fit=cover&format=auto&ha=true&height=360&quality=75&v=2&version=1467971314&width=640',
+    'image' => 'https://shots.codepen.io/username/pen/JoRazP-512.jpg?version=1467971314',
     'keywords' => [],
     'language' => 'en-US',
     'languages' => [],
@@ -35,13 +35,13 @@ return [
         'provider_url' => 'https://codepen.io',
         'title' => 'TheaterJS',
         'author_name' => 'Gabin Aureche',
-        'author_url' => 'https://codepen.io/Zhouzi/',
+        'author_url' => 'https://codepen.io/Zhouzi',
         'height' => '300',
         'width' => '800',
         'thumbnail_width' => '384',
         'thumbnail_height' => '225',
-        'thumbnail_url' => 'https://assets.codepen.io/99102/internal/screenshots/pens/JoRazP.default.png?fit=cover&amp;format=auto&amp;ha=true&amp;height=360&amp;quality=75&amp;v=2&amp;version=1467971314&amp;width=640',
-        'html' => '<iframe id="cp_embed_JoRazP" src="https://codepen.io/Zhouzi/embed/preview/JoRazP?height=300&amp;slug-hash=JoRazP&amp;default-tabs=js,result&amp;host=https://codepen.io" title="TheaterJS" scrolling="no" frameborder="0" height="300" allowtransparency="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe>'
+        'thumbnail_url' => 'https://shots.codepen.io/username/pen/JoRazP-512.jpg?version=1467971314',
+        'html' => '<iframe id="cp_embed_JoRazP" src="https://codepen.io/Zhouzi/embed/preview/JoRazP?default-tabs=js%2Cresult&amp;height=300&amp;host=https%3A%2F%2Fcodepen.io&amp;slug-hash=JoRazP" title="TheaterJS" scrolling="no" frameborder="0" height="300" allowtransparency="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe>'
     ],
     'allLinkedData' => []
 ];
