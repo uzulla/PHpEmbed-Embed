@@ -24,7 +24,8 @@ return [
     'language' => 'gl',
     'languages' => [
         'gl' => 'https://www.abanca.com/gl/',
-        'es' => 'https://www.abanca.com/es/'
+        'es' => 'https://www.abanca.com/es/',
+        'eu' => 'https://www.abanca.com/eu/'
     ],
     'license' => null,
     'providerName' => 'Abanca',

@@ -24,130 +24,303 @@ return [
         'interstellar',
         'sept sorts'
     ],
-    'language' => null,
+    'language' => 'en',
     'languages' => [],
     'license' => null,
     'providerName' => 'Bandcamp',
     'providerUrl' => 'https://jeanjean.bandcamp.com',
-    'publishedTime' => '2013-09-15 08:45:29',
+    'publishedTime' => '2013-09-14 00:00:00',
     'redirect' => null,
     'title' => 'Coquin L\'éléphant, by Jean Jean',
     'url' => 'https://jeanjean.bandcamp.com/track/coquin-l-l-phant',
     'linkedData' => [
-        'copyrightNotice' => 'All Rights Reserved',
+        '@type' => 'MusicRecording',
         '@id' => 'https://jeanjean.bandcamp.com/track/coquin-l-l-phant',
-        'inAlbum' => [
-            '@id' => 'https://jeanjean.bandcamp.com/album/symmetry',
-            '@type' => 'MusicAlbum',
-            'name' => 'Symmetry'
-        ],
-        '@type' => [
-            'MusicRecording',
-            'Product'
-        ],
-        'byArtist' => [
-            'subjectOf' => [
-                [
-                    '@type' => 'WebSite',
-                    'url' => 'https://jeanjean.bandcamp.com/music',
-                    'name' => 'music'
-                ],
-                [
-                    '@type' => 'WebSite',
-                    'url' => 'https://jeanjean.bandcamp.com/merch',
-                    'name' => 'merch'
-                ],
-                [
-                    '@type' => 'WebSite',
-                    'url' => 'https://jeanjean.bandcamp.com/community',
-                    'name' => 'community'
-                ]
-            ],
-            '@id' => 'https://jeanjean.bandcamp.com',
-            'genre' => 'https://bandcamp.com/tag/rock',
-            '@type' => 'MusicGroup',
-            'image' => 'https://f4.bcbits.com/img/0012283751_10.jpg',
-            'additionalProperty' => [
-                [
-                    'value' => 1235691216,
-                    '@type' => 'PropertyValue',
-                    'name' => 'band_id'
-                ],
-                [
-                    'value' => 'EUR',
-                    '@type' => 'PropertyValue',
-                    'name' => 'currency'
-                ]
-            ],
-            'sameAs' => [
-                'http://www.facebook.com/jeanjeanmusic',
-                'https://www.instagram.com/wearejeanjean/',
-                'http://www.youtube.com/channel/UCOsMtEsuiqbqkFQ9oyqJhHg',
-                'http://jeanjeanband.com/',
-                'https://twitter.com/jeanjeanband'
-            ],
-            'name' => 'Jean Jean'
-        ],
-        '@context' => 'https://schema.org',
-        'duration' => 'P00H03M46S',
-        'offers' => [
-            'priceSpecification' => [
-                'minPrice' => 1.0
-            ],
-            'priceCurrency' => 'EUR',
-            '@type' => 'Offer',
-            'additionalProperty' => [
-                [
-                    'value' => 2,
-                    '@type' => 'PropertyValue',
-                    'name' => 'download_pref'
-                ],
-                [
-                    'value' => 1000.0,
-                    '@type' => 'PropertyValue',
-                    'name' => 'max_price'
-                ],
-                [
-                    'value' => 1.0,
-                    '@type' => 'PropertyValue',
-                    'name' => 'min_price'
-                ]
-            ],
-            'url' => 'https://jeanjean.bandcamp.com/track/coquin-l-l-phant#buy',
-            'price' => 1.0,
-            'availability' => 'OnlineOnly'
-        ],
         'additionalProperty' => [
             [
-                'value' => 2592086951,
                 '@type' => 'PropertyValue',
-                'name' => 'track_id'
+                'name' => 'track_id',
+                'value' => 2592086951
             ],
             [
-                'value' => 226.251,
                 '@type' => 'PropertyValue',
-                'name' => 'duration_secs'
+                'name' => 'art_id',
+                'value' => 3289609405
             ],
             [
-                'value' => 'https://t4.bcbits.com/stream/3a7928de52d6fa132b127481f7d9a0ea/mp3-128/2592086951?p=0&ts=1617636205&t=bec14e3e148c574bf56676ba4812a85d61d12561&token=1617636205_d1a065da6309e56a0174b61186b74b9e383f81d3',
                 '@type' => 'PropertyValue',
-                'name' => 'file_mp3-128'
+                'name' => 'license_name',
+                'value' => 'all_rights_reserved'
             ],
             [
-                'value' => 'all_rights_reserved',
                 '@type' => 'PropertyValue',
-                'name' => 'license_name'
-            ],
-            [
-                'value' => true,
-                '@type' => 'PropertyValue',
-                'name' => 'streaming'
+                'name' => 'tracknum',
+                'value' => 1
             ]
         ],
-        'dateModified' => '13 Sep 2013 18:03:29 GMT',
-        'image' => 'https://f4.bcbits.com/img/a3289609405_10.jpg',
         'name' => 'Coquin L\'éléphant',
-        'datePublished' => '15 Sep 2013 08:45:29 GMT',
+        'duration' => 'P00H03M46S',
+        'dateModified' => '13 Sep 2013 18:03:29 GMT',
+        'datePublished' => '14 Sep 2013 00:00:00 GMT',
+        'inAlbum' => [
+            '@type' => 'MusicAlbum',
+            'name' => 'Symmetry',
+            'albumRelease' => [
+                [
+                    '@type' => 'MusicRelease',
+                    '@id' => 'https://jeanjean.bandcamp.com/album/symmetry',
+                    'additionalProperty' => [
+                        [
+                            '@type' => 'PropertyValue',
+                            'name' => 'item_type',
+                            'value' => 'a'
+                        ]
+                    ]
+                ],
+                [
+                    '@type' => [
+                        'MusicRelease',
+                        'Product'
+                    ],
+                    '@id' => 'https://jeanjean.bandcamp.com/track/coquin-l-l-phant',
+                    'name' => 'Coquin L\'éléphant',
+                    'additionalProperty' => [
+                        [
+                            '@type' => 'PropertyValue',
+                            'name' => 'item_id',
+                            'value' => 2592086951
+                        ],
+                        [
+                            '@type' => 'PropertyValue',
+                            'name' => 'item_type',
+                            'value' => 't'
+                        ],
+                        [
+                            '@type' => 'PropertyValue',
+                            'name' => 'selling_band_id',
+                            'value' => 1235691216
+                        ],
+                        [
+                            '@type' => 'PropertyValue',
+                            'name' => 'type_name',
+                            'value' => 'Digital'
+                        ],
+                        [
+                            '@type' => 'PropertyValue',
+                            'name' => 'art_id',
+                            'value' => 3289609405
+                        ]
+                    ],
+                    'description' => 'Includes high-quality download in MP3, FLAC and more. Paying supporters also get unlimited streaming via the free Bandcamp app.',
+                    'offers' => [
+                        '@type' => 'Offer',
+                        'url' => 'https://jeanjean.bandcamp.com/track/coquin-l-l-phant#t2592086951-buy',
+                        'priceCurrency' => 'EUR',
+                        'price' => 1.0,
+                        'priceSpecification' => [
+                            'minPrice' => 1.0
+                        ],
+                        'availability' => 'OnlineOnly'
+                    ],
+                    'musicReleaseFormat' => 'DigitalFormat',
+                    'image' => [
+                        'https://f4.bcbits.com/img/a3289609405_10.jpg'
+                    ]
+                ],
+                [
+                    '@type' => [
+                        'MusicRelease',
+                        'Product'
+                    ],
+                    '@id' => 'https://jeanjean.bandcamp.com/track/coquin-l-l-phant#p1271421079',
+                    'name' => '12" Vinyl',
+                    'additionalProperty' => [
+                        [
+                            '@type' => 'PropertyValue',
+                            'name' => 'item_id',
+                            'value' => 1271421079
+                        ],
+                        [
+                            '@type' => 'PropertyValue',
+                            'name' => 'item_type',
+                            'value' => 'p'
+                        ],
+                        [
+                            '@type' => 'PropertyValue',
+                            'name' => 'selling_band_id',
+                            'value' => 1235691216
+                        ],
+                        [
+                            '@type' => 'PropertyValue',
+                            'name' => 'type_name',
+                            'value' => 'Vinyl LP'
+                        ],
+                        [
+                            '@type' => 'PropertyValue',
+                            'name' => 'image_ids',
+                            'value' => [
+                                1822625
+                            ]
+                        ],
+                        [
+                            '@type' => 'PropertyValue',
+                            'name' => 'is_music_merch',
+                            'value' => true
+                        ],
+                        [
+                            '@type' => 'PropertyValue',
+                            'name' => 'type_id',
+                            'value' => 2
+                        ]
+                    ],
+                    'offers' => [
+                        '@type' => 'Offer',
+                        'url' => 'https://jeanjean.bandcamp.com/track/coquin-l-l-phant#p1271421079-buy',
+                        'priceCurrency' => 'EUR',
+                        'price' => 12.0,
+                        'priceSpecification' => [
+                            'minPrice' => 12.0
+                        ],
+                        'availability' => 'SoldOut',
+                        'additionalProperty' => [
+                            [
+                                '@type' => 'PropertyValue',
+                                'name' => 'includes_digital_download',
+                                'value' => true
+                            ]
+                        ]
+                    ],
+                    'musicReleaseFormat' => 'VinylFormat',
+                    'image' => [
+                        'https://f4.bcbits.com/img/0001822625_10.jpg'
+                    ]
+                ]
+            ],
+            'albumReleaseType' => 'SingleRelease',
+            '@id' => 'https://jeanjean.bandcamp.com/album/symmetry',
+            'additionalProperty' => [
+                [
+                    '@type' => 'PropertyValue',
+                    'name' => 'download_pref',
+                    'value' => 2
+                ]
+            ]
+        ],
+        'byArtist' => [
+            '@type' => 'MusicGroup',
+            'name' => 'Jean Jean',
+            '@id' => 'https://jeanjean.bandcamp.com'
+        ],
+        'publisher' => [
+            '@type' => 'MusicGroup',
+            '@id' => 'https://jeanjean.bandcamp.com',
+            'name' => 'Jean Jean',
+            'additionalProperty' => [
+                [
+                    '@type' => 'PropertyValue',
+                    'name' => 'band_id',
+                    'value' => 1235691216
+                ],
+                [
+                    '@type' => 'PropertyValue',
+                    'name' => 'has_any_downloads',
+                    'value' => true
+                ],
+                [
+                    '@type' => 'PropertyValue',
+                    'name' => 'has_download_codes',
+                    'value' => true
+                ],
+                [
+                    '@type' => 'PropertyValue',
+                    'name' => 'image_height',
+                    'value' => 1600
+                ],
+                [
+                    '@type' => 'PropertyValue',
+                    'name' => 'image_id',
+                    'value' => 29836714
+                ],
+                [
+                    '@type' => 'PropertyValue',
+                    'name' => 'image_width',
+                    'value' => 2279
+                ]
+            ],
+            'image' => 'https://f4.bcbits.com/img/0029836714_10.jpg',
+            'genre' => 'https://bandcamp.com/discover/rock',
+            'description' => '« On stage, JEAN JEAN is a mirror to their music : deeply intense, smiling and sharing an outra- geous joie-de-vivre. It all seems so simple, but when it builds up, they take you far, very far away » (Christophe Ehrwein)',
+            'mainEntityOfPage' => [
+                [
+                    '@type' => 'WebPage',
+                    'url' => 'http://www.facebook.com/jeanjeanmusic',
+                    'name' => 'Facebook'
+                ],
+                [
+                    '@type' => 'WebPage',
+                    'url' => 'https://www.instagram.com/wearejeanjean/',
+                    'name' => 'Instagram'
+                ],
+                [
+                    '@type' => 'WebPage',
+                    'url' => 'http://www.youtube.com/channel/UCOsMtEsuiqbqkFQ9oyqJhHg',
+                    'name' => 'YouTube'
+                ],
+                [
+                    '@type' => 'WebPage',
+                    'url' => 'http://jeanjeanband.com/',
+                    'name' => 'jeanjeanband.com'
+                ],
+                [
+                    '@type' => 'WebPage',
+                    'url' => 'https://twitter.com/jeanjeanband',
+                    'name' => 'Twitter'
+                ]
+            ],
+            'subjectOf' => [
+                [
+                    '@type' => 'WebPage',
+                    'url' => 'https://jeanjean.bandcamp.com/music',
+                    'name' => 'music',
+                    'additionalProperty' => [
+                        [
+                            '@type' => 'PropertyValue',
+                            'name' => 'nav_type',
+                            'value' => 'm'
+                        ]
+                    ]
+                ],
+                [
+                    '@type' => 'WebPage',
+                    'url' => 'https://jeanjean.bandcamp.com/merch',
+                    'name' => 'merch',
+                    'additionalProperty' => [
+                        [
+                            '@type' => 'PropertyValue',
+                            'name' => 'nav_type',
+                            'value' => 'p'
+                        ]
+                    ]
+                ],
+                [
+                    '@type' => 'WebPage',
+                    'url' => 'https://jeanjean.bandcamp.com/community',
+                    'name' => 'community',
+                    'additionalProperty' => [
+                        [
+                            '@type' => 'PropertyValue',
+                            'name' => 'nav_type',
+                            'value' => 'c'
+                        ]
+                    ]
+                ]
+            ],
+            'foundingLocation' => [
+                '@type' => 'Place',
+                'name' => 'Sept Sorts, France'
+            ]
+        ],
+        'copyrightNotice' => 'All Rights Reserved',
         'keywords' => [
             'Rock',
             'ambient',
@@ -156,144 +329,354 @@ return [
             'interstellar',
             'Sept Sorts'
         ],
+        'image' => 'https://f4.bcbits.com/img/a3289609405_10.jpg',
         'sponsor' => [
             [
                 '@type' => 'Person',
                 'url' => 'https://bandcamp.com/jaredremillard',
-                'image' => 'https://f4.bcbits.com/img/0001850798_10.jpg',
+                'image' => 'https://f4.bcbits.com/img/0001850798_50.jpg',
+                'additionalProperty' => [
+                    [
+                        '@type' => 'PropertyValue',
+                        'name' => 'image_id',
+                        'value' => 1850798
+                    ]
+                ],
                 'name' => 'Jared ReMillard'
             ],
             [
                 '@type' => 'Person',
                 'url' => 'https://bandcamp.com/sheebypanda',
-                'image' => 'https://f4.bcbits.com/img/0004764347_10.jpg',
+                'image' => 'https://f4.bcbits.com/img/0004764347_50.jpg',
+                'additionalProperty' => [
+                    [
+                        '@type' => 'PropertyValue',
+                        'name' => 'image_id',
+                        'value' => 4764347
+                    ]
+                ],
                 'name' => 'SheebyPanda'
             ],
             [
                 '@type' => 'Person',
+                'url' => 'https://bandcamp.com/salvajer911',
+                'image' => 'https://f4.bcbits.com/img/0017750248_50.jpg',
+                'additionalProperty' => [
+                    [
+                        '@type' => 'PropertyValue',
+                        'name' => 'image_id',
+                        'value' => 17750248
+                    ]
+                ],
+                'name' => 'Guilhem Sauvage'
+            ],
+            [
+                '@type' => 'Person',
                 'url' => 'https://bandcamp.com/tylerthornhill',
-                'image' => 'https://f4.bcbits.com/img/0001705921_10.jpg',
+                'image' => 'https://f4.bcbits.com/img/0001705921_50.jpg',
+                'additionalProperty' => [
+                    [
+                        '@type' => 'PropertyValue',
+                        'name' => 'image_id',
+                        'value' => 1705921
+                    ]
+                ],
                 'name' => 'Tyler Thornhill'
             ]
-        ]
+        ],
+        'mainEntityOfPage' => 'https://jeanjean.bandcamp.com/track/coquin-l-l-phant',
+        '@context' => 'https://schema.org'
     ],
     'oEmbed' => [],
     'allLinkedData' => [
         [
-            'copyrightNotice' => 'All Rights Reserved',
+            '@type' => 'MusicRecording',
             '@id' => 'https://jeanjean.bandcamp.com/track/coquin-l-l-phant',
-            'inAlbum' => [
-                '@id' => 'https://jeanjean.bandcamp.com/album/symmetry',
-                '@type' => 'MusicAlbum',
-                'name' => 'Symmetry'
-            ],
-            '@type' => [
-                'MusicRecording',
-                'Product'
-            ],
-            'byArtist' => [
-                'subjectOf' => [
-                    [
-                        '@type' => 'WebSite',
-                        'url' => 'https://jeanjean.bandcamp.com/music',
-                        'name' => 'music'
-                    ],
-                    [
-                        '@type' => 'WebSite',
-                        'url' => 'https://jeanjean.bandcamp.com/merch',
-                        'name' => 'merch'
-                    ],
-                    [
-                        '@type' => 'WebSite',
-                        'url' => 'https://jeanjean.bandcamp.com/community',
-                        'name' => 'community'
-                    ]
-                ],
-                '@id' => 'https://jeanjean.bandcamp.com',
-                'genre' => 'https://bandcamp.com/tag/rock',
-                '@type' => 'MusicGroup',
-                'image' => 'https://f4.bcbits.com/img/0012283751_10.jpg',
-                'additionalProperty' => [
-                    [
-                        'value' => 1235691216,
-                        '@type' => 'PropertyValue',
-                        'name' => 'band_id'
-                    ],
-                    [
-                        'value' => 'EUR',
-                        '@type' => 'PropertyValue',
-                        'name' => 'currency'
-                    ]
-                ],
-                'sameAs' => [
-                    'http://www.facebook.com/jeanjeanmusic',
-                    'https://www.instagram.com/wearejeanjean/',
-                    'http://www.youtube.com/channel/UCOsMtEsuiqbqkFQ9oyqJhHg',
-                    'http://jeanjeanband.com/',
-                    'https://twitter.com/jeanjeanband'
-                ],
-                'name' => 'Jean Jean'
-            ],
-            '@context' => 'https://schema.org',
-            'duration' => 'P00H03M46S',
-            'offers' => [
-                'priceSpecification' => [
-                    'minPrice' => 1.0
-                ],
-                'priceCurrency' => 'EUR',
-                '@type' => 'Offer',
-                'additionalProperty' => [
-                    [
-                        'value' => 2,
-                        '@type' => 'PropertyValue',
-                        'name' => 'download_pref'
-                    ],
-                    [
-                        'value' => 1000.0,
-                        '@type' => 'PropertyValue',
-                        'name' => 'max_price'
-                    ],
-                    [
-                        'value' => 1.0,
-                        '@type' => 'PropertyValue',
-                        'name' => 'min_price'
-                    ]
-                ],
-                'url' => 'https://jeanjean.bandcamp.com/track/coquin-l-l-phant#buy',
-                'price' => 1.0,
-                'availability' => 'OnlineOnly'
-            ],
             'additionalProperty' => [
                 [
-                    'value' => 2592086951,
                     '@type' => 'PropertyValue',
-                    'name' => 'track_id'
+                    'name' => 'track_id',
+                    'value' => 2592086951
                 ],
                 [
-                    'value' => 226.251,
                     '@type' => 'PropertyValue',
-                    'name' => 'duration_secs'
+                    'name' => 'art_id',
+                    'value' => 3289609405
                 ],
                 [
-                    'value' => 'https://t4.bcbits.com/stream/3a7928de52d6fa132b127481f7d9a0ea/mp3-128/2592086951?p=0&ts=1617636205&t=bec14e3e148c574bf56676ba4812a85d61d12561&token=1617636205_d1a065da6309e56a0174b61186b74b9e383f81d3',
                     '@type' => 'PropertyValue',
-                    'name' => 'file_mp3-128'
+                    'name' => 'license_name',
+                    'value' => 'all_rights_reserved'
                 ],
                 [
-                    'value' => 'all_rights_reserved',
                     '@type' => 'PropertyValue',
-                    'name' => 'license_name'
-                ],
-                [
-                    'value' => true,
-                    '@type' => 'PropertyValue',
-                    'name' => 'streaming'
+                    'name' => 'tracknum',
+                    'value' => 1
                 ]
             ],
-            'dateModified' => '13 Sep 2013 18:03:29 GMT',
-            'image' => 'https://f4.bcbits.com/img/a3289609405_10.jpg',
             'name' => 'Coquin L\'éléphant',
-            'datePublished' => '15 Sep 2013 08:45:29 GMT',
+            'duration' => 'P00H03M46S',
+            'dateModified' => '13 Sep 2013 18:03:29 GMT',
+            'datePublished' => '14 Sep 2013 00:00:00 GMT',
+            'inAlbum' => [
+                '@type' => 'MusicAlbum',
+                'name' => 'Symmetry',
+                'albumRelease' => [
+                    [
+                        '@type' => 'MusicRelease',
+                        '@id' => 'https://jeanjean.bandcamp.com/album/symmetry',
+                        'additionalProperty' => [
+                            [
+                                '@type' => 'PropertyValue',
+                                'name' => 'item_type',
+                                'value' => 'a'
+                            ]
+                        ]
+                    ],
+                    [
+                        '@type' => [
+                            'MusicRelease',
+                            'Product'
+                        ],
+                        '@id' => 'https://jeanjean.bandcamp.com/track/coquin-l-l-phant',
+                        'name' => 'Coquin L\'éléphant',
+                        'additionalProperty' => [
+                            [
+                                '@type' => 'PropertyValue',
+                                'name' => 'item_id',
+                                'value' => 2592086951
+                            ],
+                            [
+                                '@type' => 'PropertyValue',
+                                'name' => 'item_type',
+                                'value' => 't'
+                            ],
+                            [
+                                '@type' => 'PropertyValue',
+                                'name' => 'selling_band_id',
+                                'value' => 1235691216
+                            ],
+                            [
+                                '@type' => 'PropertyValue',
+                                'name' => 'type_name',
+                                'value' => 'Digital'
+                            ],
+                            [
+                                '@type' => 'PropertyValue',
+                                'name' => 'art_id',
+                                'value' => 3289609405
+                            ]
+                        ],
+                        'description' => 'Includes high-quality download in MP3, FLAC and more. Paying supporters also get unlimited streaming via the free Bandcamp app.',
+                        'offers' => [
+                            '@type' => 'Offer',
+                            'url' => 'https://jeanjean.bandcamp.com/track/coquin-l-l-phant#t2592086951-buy',
+                            'priceCurrency' => 'EUR',
+                            'price' => 1.0,
+                            'priceSpecification' => [
+                                'minPrice' => 1.0
+                            ],
+                            'availability' => 'OnlineOnly'
+                        ],
+                        'musicReleaseFormat' => 'DigitalFormat',
+                        'image' => [
+                            'https://f4.bcbits.com/img/a3289609405_10.jpg'
+                        ]
+                    ],
+                    [
+                        '@type' => [
+                            'MusicRelease',
+                            'Product'
+                        ],
+                        '@id' => 'https://jeanjean.bandcamp.com/track/coquin-l-l-phant#p1271421079',
+                        'name' => '12" Vinyl',
+                        'additionalProperty' => [
+                            [
+                                '@type' => 'PropertyValue',
+                                'name' => 'item_id',
+                                'value' => 1271421079
+                            ],
+                            [
+                                '@type' => 'PropertyValue',
+                                'name' => 'item_type',
+                                'value' => 'p'
+                            ],
+                            [
+                                '@type' => 'PropertyValue',
+                                'name' => 'selling_band_id',
+                                'value' => 1235691216
+                            ],
+                            [
+                                '@type' => 'PropertyValue',
+                                'name' => 'type_name',
+                                'value' => 'Vinyl LP'
+                            ],
+                            [
+                                '@type' => 'PropertyValue',
+                                'name' => 'image_ids',
+                                'value' => [
+                                    1822625
+                                ]
+                            ],
+                            [
+                                '@type' => 'PropertyValue',
+                                'name' => 'is_music_merch',
+                                'value' => true
+                            ],
+                            [
+                                '@type' => 'PropertyValue',
+                                'name' => 'type_id',
+                                'value' => 2
+                            ]
+                        ],
+                        'offers' => [
+                            '@type' => 'Offer',
+                            'url' => 'https://jeanjean.bandcamp.com/track/coquin-l-l-phant#p1271421079-buy',
+                            'priceCurrency' => 'EUR',
+                            'price' => 12.0,
+                            'priceSpecification' => [
+                                'minPrice' => 12.0
+                            ],
+                            'availability' => 'SoldOut',
+                            'additionalProperty' => [
+                                [
+                                    '@type' => 'PropertyValue',
+                                    'name' => 'includes_digital_download',
+                                    'value' => true
+                                ]
+                            ]
+                        ],
+                        'musicReleaseFormat' => 'VinylFormat',
+                        'image' => [
+                            'https://f4.bcbits.com/img/0001822625_10.jpg'
+                        ]
+                    ]
+                ],
+                'albumReleaseType' => 'SingleRelease',
+                '@id' => 'https://jeanjean.bandcamp.com/album/symmetry',
+                'additionalProperty' => [
+                    [
+                        '@type' => 'PropertyValue',
+                        'name' => 'download_pref',
+                        'value' => 2
+                    ]
+                ]
+            ],
+            'byArtist' => [
+                '@type' => 'MusicGroup',
+                'name' => 'Jean Jean',
+                '@id' => 'https://jeanjean.bandcamp.com'
+            ],
+            'publisher' => [
+                '@type' => 'MusicGroup',
+                '@id' => 'https://jeanjean.bandcamp.com',
+                'name' => 'Jean Jean',
+                'additionalProperty' => [
+                    [
+                        '@type' => 'PropertyValue',
+                        'name' => 'band_id',
+                        'value' => 1235691216
+                    ],
+                    [
+                        '@type' => 'PropertyValue',
+                        'name' => 'has_any_downloads',
+                        'value' => true
+                    ],
+                    [
+                        '@type' => 'PropertyValue',
+                        'name' => 'has_download_codes',
+                        'value' => true
+                    ],
+                    [
+                        '@type' => 'PropertyValue',
+                        'name' => 'image_height',
+                        'value' => 1600
+                    ],
+                    [
+                        '@type' => 'PropertyValue',
+                        'name' => 'image_id',
+                        'value' => 29836714
+                    ],
+                    [
+                        '@type' => 'PropertyValue',
+                        'name' => 'image_width',
+                        'value' => 2279
+                    ]
+                ],
+                'image' => 'https://f4.bcbits.com/img/0029836714_10.jpg',
+                'genre' => 'https://bandcamp.com/discover/rock',
+                'description' => '« On stage, JEAN JEAN is a mirror to their music : deeply intense, smiling and sharing an outra- geous joie-de-vivre. It all seems so simple, but when it builds up, they take you far, very far away » (Christophe Ehrwein)',
+                'mainEntityOfPage' => [
+                    [
+                        '@type' => 'WebPage',
+                        'url' => 'http://www.facebook.com/jeanjeanmusic',
+                        'name' => 'Facebook'
+                    ],
+                    [
+                        '@type' => 'WebPage',
+                        'url' => 'https://www.instagram.com/wearejeanjean/',
+                        'name' => 'Instagram'
+                    ],
+                    [
+                        '@type' => 'WebPage',
+                        'url' => 'http://www.youtube.com/channel/UCOsMtEsuiqbqkFQ9oyqJhHg',
+                        'name' => 'YouTube'
+                    ],
+                    [
+                        '@type' => 'WebPage',
+                        'url' => 'http://jeanjeanband.com/',
+                        'name' => 'jeanjeanband.com'
+                    ],
+                    [
+                        '@type' => 'WebPage',
+                        'url' => 'https://twitter.com/jeanjeanband',
+                        'name' => 'Twitter'
+                    ]
+                ],
+                'subjectOf' => [
+                    [
+                        '@type' => 'WebPage',
+                        'url' => 'https://jeanjean.bandcamp.com/music',
+                        'name' => 'music',
+                        'additionalProperty' => [
+                            [
+                                '@type' => 'PropertyValue',
+                                'name' => 'nav_type',
+                                'value' => 'm'
+                            ]
+                        ]
+                    ],
+                    [
+                        '@type' => 'WebPage',
+                        'url' => 'https://jeanjean.bandcamp.com/merch',
+                        'name' => 'merch',
+                        'additionalProperty' => [
+                            [
+                                '@type' => 'PropertyValue',
+                                'name' => 'nav_type',
+                                'value' => 'p'
+                            ]
+                        ]
+                    ],
+                    [
+                        '@type' => 'WebPage',
+                        'url' => 'https://jeanjean.bandcamp.com/community',
+                        'name' => 'community',
+                        'additionalProperty' => [
+                            [
+                                '@type' => 'PropertyValue',
+                                'name' => 'nav_type',
+                                'value' => 'c'
+                            ]
+                        ]
+                    ]
+                ],
+                'foundingLocation' => [
+                    '@type' => 'Place',
+                    'name' => 'Sept Sorts, France'
+                ]
+            ],
+            'copyrightNotice' => 'All Rights Reserved',
             'keywords' => [
                 'Rock',
                 'ambient',
@@ -302,26 +685,63 @@ return [
                 'interstellar',
                 'Sept Sorts'
             ],
+            'image' => 'https://f4.bcbits.com/img/a3289609405_10.jpg',
             'sponsor' => [
                 [
                     '@type' => 'Person',
                     'url' => 'https://bandcamp.com/jaredremillard',
-                    'image' => 'https://f4.bcbits.com/img/0001850798_10.jpg',
+                    'image' => 'https://f4.bcbits.com/img/0001850798_50.jpg',
+                    'additionalProperty' => [
+                        [
+                            '@type' => 'PropertyValue',
+                            'name' => 'image_id',
+                            'value' => 1850798
+                        ]
+                    ],
                     'name' => 'Jared ReMillard'
                 ],
                 [
                     '@type' => 'Person',
                     'url' => 'https://bandcamp.com/sheebypanda',
-                    'image' => 'https://f4.bcbits.com/img/0004764347_10.jpg',
+                    'image' => 'https://f4.bcbits.com/img/0004764347_50.jpg',
+                    'additionalProperty' => [
+                        [
+                            '@type' => 'PropertyValue',
+                            'name' => 'image_id',
+                            'value' => 4764347
+                        ]
+                    ],
                     'name' => 'SheebyPanda'
                 ],
                 [
                     '@type' => 'Person',
+                    'url' => 'https://bandcamp.com/salvajer911',
+                    'image' => 'https://f4.bcbits.com/img/0017750248_50.jpg',
+                    'additionalProperty' => [
+                        [
+                            '@type' => 'PropertyValue',
+                            'name' => 'image_id',
+                            'value' => 17750248
+                        ]
+                    ],
+                    'name' => 'Guilhem Sauvage'
+                ],
+                [
+                    '@type' => 'Person',
                     'url' => 'https://bandcamp.com/tylerthornhill',
-                    'image' => 'https://f4.bcbits.com/img/0001705921_10.jpg',
+                    'image' => 'https://f4.bcbits.com/img/0001705921_50.jpg',
+                    'additionalProperty' => [
+                        [
+                            '@type' => 'PropertyValue',
+                            'name' => 'image_id',
+                            'value' => 1705921
+                        ]
+                    ],
                     'name' => 'Tyler Thornhill'
                 ]
-            ]
+            ],
+            'mainEntityOfPage' => 'https://jeanjean.bandcamp.com/track/coquin-l-l-phant',
+            '@context' => 'https://schema.org'
         ]
     ]
 ];

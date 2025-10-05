@@ -7,20 +7,20 @@ return [
     'cms' => null,
     'code' => null,
     'description' => null,
-    'favicon' => 'http://imagizer.imageshack.com/favicon.ico',
+    'favicon' => 'https://imagizer.imageshack.com/favicon.ico',
     'feeds' => [],
     'icon' => null,
-    'image' => 'http://imagizer.imageshack.com/img673/0/imagizer.imageshack.com/img673/9643/7wO0v7.jpg',
+    'image' => 'https://imagizer.imageshack.com/img673/0/imagizer.imageshack.com/img673/9643/7wO0v7.jpg',
     'keywords' => [],
     'language' => null,
     'languages' => [],
     'license' => null,
     'providerName' => 'ImageShack',
-    'providerUrl' => 'http://imagizer.imageshack.com',
+    'providerUrl' => 'https://imagizer.imageshack.com',
     'publishedTime' => '2015-06-29 22:13:36',
     'redirect' => null,
     'title' => 'Kisses',
-    'url' => 'http://imagizer.imageshack.com/img673/0/7wO0v7.jpg',
+    'url' => 'https://imagizer.imageshack.com/img673/0/7wO0v7.jpg',
     'linkedData' => [],
     'oEmbed' => [],
     'api' => [
@@ -44,7 +44,7 @@ return [
             'public' => false
         ],
         'comments_count' => 0,
-        'comments_disabled' => false,
+        'comments_disabled' => true,
         'filter' => 0,
         'filesize' => 54,
         'creation_date' => 1435616016,
@@ -68,7 +68,8 @@ return [
                 'y_length' => 0
             ],
             'membership' => 'free',
-            'featured_photographer' => false
+            'featured_photographer' => false,
+            'allow_following' => false
         ],
         'next_images' => [],
         'prev_images' => []

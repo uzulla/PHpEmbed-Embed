@@ -6,16 +6,16 @@ return [
     'authorUrl' => null,
     'cms' => null,
     'code' => [
-        'html' => '<blockquote class="reddit-card" > <a href="https://www.reddit.com/r/investing/comments/7pfpeq/buffett_on_cyrptocurrencies_i_can_say_almost_with/?ref_source=embed&amp;ref=share">Buffett on cyrptocurrencies: \'I can say almost with certainty that they will come to a bad ending\'</a> from <a href="https://www.reddit.com/r/investing/">investing</a> </blockquote> <script async src="https://embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>',
+        'html' => '<blockquote class="reddit-embed-bq" style="height:316px" > <a href="https://www.reddit.com/r/investing/comments/7pfpeq/buffett_on_cyrptocurrencies_i_can_say_almost_with/">Buffett on cyrptocurrencies: \'I can say almost with certainty that they will come to a bad ending\'</a><br> by <a href="https://www.reddit.com/user/dennisrieves/">u/dennisrieves</a> in <a href="https://www.reddit.com/r/investing/">investing</a> </blockquote> <script async src="https://embed.reddit.com/widgets.js" charset="UTF-8"></script>',
         'width' => null,
-        'height' => null,
+        'height' => 316,
         'ratio' => null
     ],
-    'description' => '1,937 votes and 1,263 comments so far on Reddit',
-    'favicon' => 'https://www.redditstatic.com/desktop2x/img/favicon/android-icon-192x192.png',
+    'description' => null,
+    'favicon' => 'https://www.reddit.com/favicon.ico',
     'feeds' => [],
-    'icon' => 'https://www.redditstatic.com/desktop2x/img/favicon/apple-icon-57x57.png',
-    'image' => 'https://external-preview.redd.it/0e1ORiHMjPTnSvzC-f3SC1-3IfjyQHqzqkk5nJPlDts.jpg?auto=webp&s=ef51b1d9b2ec99ba5dc8031fd134011376932b38',
+    'icon' => 'https://www.redditstatic.com/shreddit/assets/favicon/76x76.png',
+    'image' => null,
     'keywords' => [],
     'language' => 'en-US',
     'languages' => [],
@@ -25,22 +25,21 @@ return [
     'publishedTime' => null,
     'redirect' => null,
     'title' => 'Buffett on cyrptocurrencies: \'I can say almost with certainty that they will come to a bad ending\'',
-    'url' => 'https://www.reddit.com/r/investing/comments/7pfpeq/buffett_on_cyrptocurrencies_i_can_say_almost_with/',
+    'url' => 'https://www.reddit.com/r/investing/comments/7pfpeq/buffett_on_cyrptocurrencies_i_can_say_almost_with/?rdt=46144',
     'linkedData' => [],
     'oEmbed' => [
-        'provider_url' => 'https://www.reddit.com/',
-        'version' => '1.0',
-        'title' => 'Buffett on cyrptocurrencies: \'I can say almost with certainty that they will come to a bad ending\'',
+        'author_name' => 'dennisrieves',
+        'html' => '<blockquote class="reddit-embed-bq" style="height:316px" >
+<a href="https://www.reddit.com/r/investing/comments/7pfpeq/buffett_on_cyrptocurrencies_i_can_say_almost_with/">Buffett on cyrptocurrencies: \'I can say almost with certainty that they will come to a bad ending\'</a><br> by
+<a href="https://www.reddit.com/user/dennisrieves/">u/dennisrieves</a> in
+<a href="https://www.reddit.com/r/investing/">investing</a>
+</blockquote>
+<script async src="https://embed.reddit.com/widgets.js" charset="UTF-8"></script>',
         'provider_name' => 'reddit',
+        'provider_url' => 'https://www.reddit.com',
+        'title' => 'Buffett on cyrptocurrencies: \'I can say almost with certainty that they will come to a bad ending\'',
         'type' => 'rich',
-        'html' => '
-    <blockquote class="reddit-card" >
-      <a href="https://www.reddit.com/r/investing/comments/7pfpeq/buffett_on_cyrptocurrencies_i_can_say_almost_with/?ref_source=embed&amp;ref=share">Buffett on cyrptocurrencies: \'I can say almost with certainty that they will come to a bad ending\'</a> from
-      <a href="https://www.reddit.com/r/investing/">investing</a>
-    </blockquote>
-    <script async src="https://embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
-',
-        'author_name' => 'dennisrieves'
+        'height' => 316
     ],
     'allLinkedData' => []
 ];

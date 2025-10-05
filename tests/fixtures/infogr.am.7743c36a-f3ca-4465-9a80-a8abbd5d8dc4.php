@@ -2,11 +2,11 @@
 declare(strict_types = 1);
 
 return [
-    'authorName' => 'Tony Quesada',
-    'authorUrl' => 'https://infogram.com/sabjnewsroom01',
+    'authorName' => 'Archive',
+    'authorUrl' => 'https://infogram.com/archivef',
     'cms' => null,
     'code' => [
-        'html' => '<div class="infogram-embed" data-id="7743c36a-f3ca-4465-9a80-a8abbd5d8dc4" data-type="interactive" data-title="Frost Bank Advisors (online graphic)"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script>',
+        'html' => '<div class="infogram-embed" data-id="7743c36a-f3ca-4465-9a80-a8abbd5d8dc4" data-type="interactive" data-title="Frost Bank Advisors (online graphic)"></div><script>!function(e,n,i,s){var d="InfogramEmbeds";var o=e.getElementsByTagName(n)[0];if(window[d]&&window[d].initialized)window[d].process&&window[d].process();else if(!e.getElementById(i)){var r=e.createElement(n);r.async=1,r.id=i,r.src=s,o.parentNode.insertBefore(r,o)}}(document,"script","infogram-async","https://e.infogram.com/js/dist/embed-loader-min.js");</script>',
         'width' => 550,
         'height' => 600,
         'ratio' => 109.091
@@ -36,11 +36,11 @@ return [
         'title' => 'Frost Bank Advisors (online graphic)',
         'thumbnail_url' => 'https://infogram-thumbs-1024.s3-eu-west-1.amazonaws.com/4e31a649-39af-4bfd-a6a9-384e727e36e2.jpg',
         'uri' => 'https://infogram.com/frost-bank-advisors-online-graphic-1g8e205xdj03pod',
-        'html' => '<div class="infogram-embed" data-id="7743c36a-f3ca-4465-9a80-a8abbd5d8dc4" data-type="interactive" data-title="Frost Bank Advisors (online graphic)"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script>',
+        'html' => '<div class="infogram-embed" data-id="7743c36a-f3ca-4465-9a80-a8abbd5d8dc4" data-type="interactive" data-title="Frost Bank Advisors (online graphic)"></div><script>!function(e,n,i,s){var d="InfogramEmbeds";var o=e.getElementsByTagName(n)[0];if(window[d]&&window[d].initialized)window[d].process&&window[d].process();else if(!e.getElementById(i)){var r=e.createElement(n);r.async=1,r.id=i,r.src=s,o.parentNode.insertBefore(r,o)}}(document,"script","infogram-async","https://e.infogram.com/js/dist/embed-loader-min.js");</script>',
         'width' => 550,
         'height' => 600,
-        'author_url' => 'https://infogram.com/sabjnewsroom01',
-        'author_name' => 'Tony Quesada'
+        'author_url' => 'https://infogram.com/archivef',
+        'author_name' => 'Archive'
     ],
     'allLinkedData' => []
 ];
