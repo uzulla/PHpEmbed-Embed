@@ -15,6 +15,6 @@ class AuthorName extends Detector
         $api = $extractor->getApi();
 
         $result = $api->str('includes', 'users', '0', 'name');
-        return ($result !== null && $result !== '') ? $result : parent::detect();
+        return (is_string($result) && $result !== '') ? $result : parent::detect();
     }
 }

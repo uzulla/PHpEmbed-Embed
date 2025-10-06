@@ -15,6 +15,6 @@ class Description extends Detector
         $api = $extractor->getApi();
 
         $result = $api->str('description');
-        return ($result !== null && $result !== '') ? $result : parent::detect();
+        return (is_string($result) && $result !== '') ? $result : parent::detect();
     }
 }

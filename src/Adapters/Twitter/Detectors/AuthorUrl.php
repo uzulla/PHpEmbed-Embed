@@ -16,7 +16,7 @@ class AuthorUrl extends Detector
         $api = $extractor->getApi();
         $username = $api->str('includes', 'users', '0', 'username');
 
-        if ($username !== null && $username !== '') {
+        if (is_string($username) && $username !== '') {
             return $extractor->getCrawler()->createUri("https://twitter.com/{$username}");
         }
 
