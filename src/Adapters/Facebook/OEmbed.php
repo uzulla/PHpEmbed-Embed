@@ -16,7 +16,7 @@ class OEmbed extends Base
     {
         $token = $this->extractor->getSetting('facebook:token');
 
-        if ($token === null || $token === '' || $token === false) {
+        if (!is_string($token) || $token === '') {
             return null;
         }
 
