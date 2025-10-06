@@ -22,4 +22,13 @@
             <group>ignore</group>
         </exclude>
     </groups>
+    <coverage>
+        <include>
+            <directory suffix=".php">src</directory>
+        </include>
+        <report>
+            <html outputDirectory="coverage-html"/>
+            <text outputFile="php://stdout" showUncoveredFiles="false"/>
+        </report>
+    </coverage>
 </phpunit>
