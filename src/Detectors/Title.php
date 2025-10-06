@@ -12,7 +12,7 @@ class Title extends Detector
         $metas = $this->extractor->getMetas();
 
         $result = $oembed->str('title');
-        if ($result !== null) {
+        if (is_string($result) && trim($result) !== '') {
             return $result;
         }
 
@@ -26,7 +26,7 @@ class Title extends Detector
             'article.headline',
             'parsely-title'
         );
-        if ($result !== null) {
+        if (is_string($result) && trim($result) !== '') {
             return $result;
         }
 

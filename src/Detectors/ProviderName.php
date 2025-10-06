@@ -14,7 +14,7 @@ class ProviderName extends Detector
         $metas = $this->extractor->getMetas();
 
         $result = $oembed->str('provider_name');
-        if ($result !== null) {
+        if (is_string($result) && trim($result) !== '') {
             return $result;
         }
 
@@ -24,7 +24,7 @@ class ProviderName extends Detector
             'publisher',
             'article:publisher'
         );
-        if ($result !== null) {
+        if (is_string($result) && trim($result) !== '') {
             return $result;
         }
 

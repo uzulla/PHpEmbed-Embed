@@ -12,7 +12,7 @@ class Description extends Detector
         $ld = $this->extractor->getLinkedData();
 
         $result = $oembed->str('description');
-        if ($result !== null) {
+        if (is_string($result) && trim($result) !== '') {
             return $result;
         }
 
@@ -27,7 +27,7 @@ class Description extends Detector
             'excerpt',
             'article.summary'
         );
-        if ($result !== null) {
+        if (is_string($result) && trim($result) !== '') {
             return $result;
         }
 

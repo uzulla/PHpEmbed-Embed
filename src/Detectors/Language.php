@@ -12,22 +12,22 @@ class Language extends Detector
         $ld = $this->extractor->getLinkedData();
 
         $result = $document->select('/html')->str('lang');
-        if ($result !== null) {
+        if (is_string($result) && trim($result) !== '') {
             return $result;
         }
 
         $result = $document->select('/html')->str('xml:lang');
-        if ($result !== null) {
+        if (is_string($result) && trim($result) !== '') {
             return $result;
         }
 
         $result = $metas->str('language', 'lang', 'og:locale', 'dc:language');
-        if ($result !== null) {
+        if (is_string($result) && trim($result) !== '') {
             return $result;
         }
 
         $result = $document->select('.//meta', ['http-equiv' => 'content-language'])->str('content');
-        if ($result !== null) {
+        if (is_string($result) && trim($result) !== '') {
             return $result;
         }
 

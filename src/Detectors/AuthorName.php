@@ -11,7 +11,7 @@ class AuthorName extends Detector
         $metas = $this->extractor->getMetas();
 
         $result = $oembed->str('author_name');
-        if ($result !== null) {
+        if (is_string($result) && trim($result) !== '') {
             return $result;
         }
 
