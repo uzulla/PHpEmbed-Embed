@@ -74,9 +74,9 @@ class Document
         } else {
             // PHP 8.0+: ValueError exception is thrown for invalid/empty encoding
             try {
-                $aliases = mb_encoding_aliases($encoding ?? '');
-                // Check if aliases array is not empty (valid encoding should have at least one alias)
-                return !empty($aliases) ? $encoding : null;
+                mb_encoding_aliases($encoding ?? '');
+                // If mb_encoding_aliases succeeds, return the input value as is. Some encodings do not have aliases.
+                return $encoding;
             } catch (\ValueError $exception) {
                 return null;
             }
