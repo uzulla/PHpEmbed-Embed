@@ -15,6 +15,6 @@ class Title extends Detector
         $api = $extractor->getApi();
 
         $result = $api->str('metadata', 'title');
-        return $result !== null ? $result : parent::detect();
+        return ($result !== null && $result !== '') ? $result : parent::detect();
     }
 }

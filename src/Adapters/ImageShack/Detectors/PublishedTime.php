@@ -16,7 +16,6 @@ class PublishedTime extends Detector
         $api = $extractor->getApi();
 
         $result = $api->time('creation_date');
-
         return $result !== null ? $result : parent::detect();
     }
 }

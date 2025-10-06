@@ -16,7 +16,6 @@ class Image extends Detector
         $api = $extractor->getApi();
 
         $result = $api->url('direct_link');
-
         return $result !== null ? $result : parent::detect();
     }
 }
