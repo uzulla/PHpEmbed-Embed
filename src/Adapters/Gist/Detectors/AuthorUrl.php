@@ -17,7 +17,7 @@ class AuthorUrl extends Detector
         $owner = $api->str('owner');
 
         if ($owner !== null) {
-            return $this->extractor->getCrawler()->createUri("https://github.com/{$owner}");
+            return $extractor->getCrawler()->createUri("https://github.com/{$owner}");
         }
 
         return parent::detect();

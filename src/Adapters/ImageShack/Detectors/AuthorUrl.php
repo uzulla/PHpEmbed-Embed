@@ -17,7 +17,7 @@ class AuthorUrl extends Detector
         $owner = $api->str('owner', 'username');
 
         if ($owner !== null) {
-            return $this->extractor->getCrawler()->createUri("https://imageshack.com/{$owner}");
+            return $extractor->getCrawler()->createUri("https://imageshack.com/{$owner}");
         }
 
         return parent::detect();
