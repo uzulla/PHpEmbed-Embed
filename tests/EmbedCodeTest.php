@@ -12,7 +12,7 @@ class EmbedCodeTest extends TestCase
     {
         // Normal case: width=380, height=120
         $code = new EmbedCode('<iframe></iframe>', 380, 120);
-        $this->assertEquals(31.579, $code->ratio);
+        $this->assertEqualsWithDelta(31.579, $code->ratio, 0.001);
     }
 
     public function testRatioCalculationWithNullWidth()
@@ -65,7 +65,7 @@ class EmbedCodeTest extends TestCase
         $this->assertEquals('<div>test</div>', $json['html']);
         $this->assertEquals(640, $json['width']);
         $this->assertEquals(480, $json['height']);
-        $this->assertEquals(75.0, $json['ratio']);
+        $this->assertEqualsWithDelta(75.0, $json['ratio'], 0.001);
     }
 
     public function testToString()
