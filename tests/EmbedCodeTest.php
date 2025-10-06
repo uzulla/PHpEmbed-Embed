@@ -38,9 +38,9 @@ class EmbedCodeTest extends TestCase
 
     public function testRatioCalculationWithZeroHeight()
     {
-        // height=0 case (ratio becomes 0.0)
+        // height=0 case (prevents meaningless ratio calculation)
         $code = new EmbedCode('<iframe></iframe>', 400, 0);
-        $this->assertEquals(0.0, $code->ratio);
+        $this->assertNull($code->ratio);
     }
 
     public function testRatioCalculationWithBothZero()
