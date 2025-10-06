@@ -6,7 +6,9 @@ parameters:
     paths:
         - src
 #        - tests
-        - issue-report/tests
+    excludePaths:
+        - tests/cache
+        - tests/fixtures
     checkMissingCallableSignature: true
     checkUninitializedProperties: true
     checkTooWideReturnTypesInProtectedAndPublicMethods: true

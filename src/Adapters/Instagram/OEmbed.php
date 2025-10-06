@@ -14,7 +14,7 @@ class OEmbed extends Base
     {
         $token = $this->extractor->getSetting('instagram:token');
 
-        if (!$token) {
+        if ($token === null || $token === '' || $token === false) {
             return null;
         }
 

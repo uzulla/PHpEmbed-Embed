@@ -11,18 +11,26 @@ class Description extends Detector
         $metas = $this->extractor->getMetas();
         $ld = $this->extractor->getLinkedData();
 
-        return $oembed->str('description')
-            ?: $metas->str(
-                'og:description',
-                'twitter:description',
-                'lp:description',
-                'description',
-                'article:description',
-                'dcterms.description',
-                'sailthru.description',
-                'excerpt',
-                'article.summary'
-            )
-            ?: $ld->str('description');
+        $result = $oembed->str('description');
+        if ($result !== null) {
+            return $result;
+        }
+
+        $result = $metas->str(
+            'og:description',
+            'twitter:description',
+            'lp:description',
+            'description',
+            'article:description',
+            'dcterms.description',
+            'sailthru.description',
+            'excerpt',
+            'article.summary'
+        );
+        if ($result !== null) {
+            return $result;
+        }
+
+        return $ld->str('description');
     }
 }
