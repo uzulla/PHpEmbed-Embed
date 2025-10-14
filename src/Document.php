@@ -103,7 +103,7 @@ class Document
 
         foreach ($nodes as $node) {
             if ($node->parentNode !== null) {
-                $node->parentNode->removeChild($node);
+                $node->parentNode->removeChild($node); // @phpstan-ignore argument.type
             }
         }
     }
@@ -149,7 +149,7 @@ class Document
         if ($result === false) {
             $result = new \DOMNodeList();
         }
-        return new QueryResult($result, $this->extractor);
+        return new QueryResult($result, $this->extractor); // @phpstan-ignore argument.type
     }
 
     /**
