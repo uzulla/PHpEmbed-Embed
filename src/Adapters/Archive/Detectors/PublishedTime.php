@@ -4,14 +4,15 @@ declare(strict_types = 1);
 namespace Embed\Adapters\Archive\Detectors;
 
 use DateTime;
-use Embed\Adapters\Archive\Extractor;
 use Embed\Detectors\PublishedTime as Detector;
 
+/**
+ * @extends Detector<\Embed\Adapters\Archive\Extractor>
+ */
 class PublishedTime extends Detector
 {
     public function detect(): ?DateTime
     {
-        /** @var Extractor $extractor */
         $extractor = $this->extractor;
         $api = $extractor->getApi();
 

@@ -10,6 +10,7 @@ use Psr\Http\Message\UriInterface;
 
 class ExtractorFactory
 {
+    /** @var class-string<Extractor> */
     private string $default = Extractor::class;
     /** @var array<string, class-string<Extractor>> */
     private array $adapters = [
@@ -33,7 +34,7 @@ class ExtractorFactory
         'twitter.com' => Adapters\Twitter\Extractor::class,
         'x.com' => Adapters\Twitter\Extractor::class,
     ];
-    /** @var array<string, class-string<Detectors\Detector>> */
+    /** @var array<string, class-string<Detectors\Detector<Extractor>>> */
     private array $customDetectors = [];
     /** @var array<string, mixed> */
     private array $settings;
@@ -65,12 +66,10 @@ class ExtractorFactory
             }
         }
 
-        /** @var Extractor $extractor */
         $extractor = new $class($uri, $request, $response, $crawler);
         $extractor->setSettings($this->settings);
 
         foreach ($this->customDetectors as $name => $detectorClass) {
-            /** @var Detectors\Detector */
             $detector = new $detectorClass($extractor);
             $extractor->addDetector($name, $detector);
         }
@@ -91,7 +90,7 @@ class ExtractorFactory
     }
 
     /**
-     * @param class-string<Detectors\Detector> $class
+     * @param class-string<Detectors\Detector<Extractor>> $class
      */
     public function addDetector(string $name, string $class): void
     {
@@ -103,6 +102,9 @@ class ExtractorFactory
         unset($this->adapters[$pattern]);
     }
 
+    /**
+     * @param class-string<Extractor> $class
+     */
     public function setDefault(string $class): void
     {
         $this->default = $class;

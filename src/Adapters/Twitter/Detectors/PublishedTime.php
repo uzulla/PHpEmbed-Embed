@@ -7,11 +7,13 @@ use DateTime;
 use Embed\Adapters\Twitter\Extractor;
 use Embed\Detectors\PublishedTime as Detector;
 
+/**
+ * @extends Detector<\Embed\Adapters\Twitter\Extractor>
+ */
 class PublishedTime extends Detector
 {
     public function detect(): ?DateTime
     {
-        /** @var Extractor $extractor */
         $extractor = $this->extractor;
         $api = $extractor->getApi();
 

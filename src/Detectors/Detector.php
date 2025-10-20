@@ -5,12 +5,19 @@ namespace Embed\Detectors;
 
 use Embed\Extractor;
 
+/**
+ * @template TExtractor of Extractor
+ */
 abstract class Detector
 {
+    /** @var TExtractor */
     protected Extractor $extractor;
     /** @var array<string, mixed> */
     private array $cache = [];
 
+    /**
+     * @param TExtractor $extractor
+     */
     public function __construct(Extractor $extractor)
     {
         $this->extractor = $extractor;

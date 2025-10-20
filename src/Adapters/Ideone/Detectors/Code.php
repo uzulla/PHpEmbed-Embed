@@ -7,6 +7,9 @@ use Embed\Detectors\Code as Detector;
 use Embed\EmbedCode;
 use function Embed\html;
 
+/**
+ * @extends Detector<\Embed\Adapters\Ideone\Extractor>
+ */
 class Code extends Detector
 {
     public function detect(): ?EmbedCode

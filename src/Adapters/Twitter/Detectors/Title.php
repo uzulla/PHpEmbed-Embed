@@ -6,11 +6,13 @@ namespace Embed\Adapters\Twitter\Detectors;
 use Embed\Adapters\Twitter\Extractor;
 use Embed\Detectors\Title as Detector;
 
+/**
+ * @extends Detector<\Embed\Adapters\Twitter\Extractor>
+ */
 class Title extends Detector
 {
     public function detect(): ?string
     {
-        /** @var Extractor $extractor */
         $extractor = $this->extractor;
         $api = $extractor->getApi();
         $name = $api->str('includes', 'users', '0', 'name');

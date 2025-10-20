@@ -9,6 +9,9 @@ use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\UriInterface;
 
+/**
+ * @template-extends Base<\Embed\Detectors\Detector<self>>
+ */
 class Extractor extends Base
 {
     private Api $api;
@@ -28,9 +31,6 @@ class Extractor extends Base
         return $this->api;
     }
 
-    /**
-     * @return array<string, \Embed\Detectors\Detector>
-     */
     public function createCustomDetectors(): array
     {
         return [

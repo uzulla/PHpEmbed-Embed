@@ -3,11 +3,13 @@ declare(strict_types = 1);
 
 namespace Embed\Adapters\Gist\Detectors;
 
-use Embed\Adapters\Gist\Extractor;
 use Embed\Detectors\Code as Detector;
 use Embed\EmbedCode;
 use function Embed\html;
 
+/**
+ * @extends Detector<\Embed\Adapters\Gist\Extractor>
+ */
 class Code extends Detector
 {
     public function detect(): ?EmbedCode
@@ -18,7 +20,6 @@ class Code extends Detector
 
     private function fallback(): ?EmbedCode
     {
-        /** @var Extractor $extractor */
         $extractor = $this->extractor;
         $api = $extractor->getApi();
 

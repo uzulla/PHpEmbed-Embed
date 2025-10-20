@@ -3,14 +3,15 @@ declare(strict_types = 1);
 
 namespace Embed\Adapters\Gist\Detectors;
 
-use Embed\Adapters\Gist\Extractor;
 use Embed\Detectors\AuthorName as Detector;
 
+/**
+ * @extends Detector<\Embed\Adapters\Gist\Extractor>
+ */
 class AuthorName extends Detector
 {
     public function detect(): ?string
     {
-        /** @var Extractor $extractor */
         $extractor = $this->extractor;
         $api = $extractor->getApi();
 

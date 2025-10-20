@@ -7,11 +7,13 @@ use Embed\Adapters\Twitter\Extractor;
 use Embed\Detectors\Image as Detector;
 use Psr\Http\Message\UriInterface;
 
+/**
+ * @extends Detector<\Embed\Adapters\Twitter\Extractor>
+ */
 class Image extends Detector
 {
     public function detect(): ?UriInterface
     {
-        /** @var Extractor $extractor */
         $extractor = $this->extractor;
         $api = $extractor->getApi();
         $preview = $api->url('includes', 'media', '0', 'preview_image_url');

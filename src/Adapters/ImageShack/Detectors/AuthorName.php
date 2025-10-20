@@ -6,11 +6,13 @@ namespace Embed\Adapters\ImageShack\Detectors;
 use Embed\Adapters\ImageShack\Extractor;
 use Embed\Detectors\AuthorName as Detector;
 
+/**
+ * @extends Detector<\Embed\Adapters\ImageShack\Extractor>
+ */
 class AuthorName extends Detector
 {
     public function detect(): ?string
     {
-        /** @var Extractor $extractor */
         $extractor = $this->extractor;
         $api = $extractor->getApi();
 
