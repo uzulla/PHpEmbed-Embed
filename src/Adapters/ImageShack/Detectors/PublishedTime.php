@@ -14,8 +14,7 @@ class PublishedTime extends Detector
 {
     public function detect(): ?DateTime
     {
-        $extractor = $this->extractor;
-        $api = $extractor->getApi();
+        $api = $this->extractor->getApi();
 
         $result = $api->time('creation_date');
         return $result !== null ? $result : parent::detect();

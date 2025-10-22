@@ -13,8 +13,7 @@ class Image extends Detector
 {
     public function detect(): ?UriInterface
     {
-        $extractor = $this->extractor;
-        $api = $extractor->getApi();
+        $api = $this->extractor->getApi();
 
         $result = $api->url('direct_link');
         return $result !== null ? $result : parent::detect();

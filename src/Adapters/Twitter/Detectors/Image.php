@@ -14,8 +14,7 @@ class Image extends Detector
 {
     public function detect(): ?UriInterface
     {
-        $extractor = $this->extractor;
-        $api = $extractor->getApi();
+        $api = $this->extractor->getApi();
         $preview = $api->url('includes', 'media', '0', 'preview_image_url');
 
         if ($preview !== null) {

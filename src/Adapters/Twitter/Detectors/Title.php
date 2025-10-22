@@ -13,8 +13,7 @@ class Title extends Detector
 {
     public function detect(): ?string
     {
-        $extractor = $this->extractor;
-        $api = $extractor->getApi();
+        $api = $this->extractor->getApi();
         $name = $api->str('includes', 'users', '0', 'name');
 
         if ($name !== null) {

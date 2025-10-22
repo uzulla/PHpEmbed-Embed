@@ -20,8 +20,7 @@ class Code extends Detector
 
     private function fallback(): ?EmbedCode
     {
-        $extractor = $this->extractor;
-        $api = $extractor->getApi();
+        $api = $this->extractor->getApi();
 
         $code = $api->html('div');
         $stylesheet = $api->str('stylesheet');

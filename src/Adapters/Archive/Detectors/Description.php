@@ -12,8 +12,7 @@ class Description extends Detector
 {
     public function detect(): ?string
     {
-        $extractor = $this->extractor;
-        $api = $extractor->getApi();
+        $api = $this->extractor->getApi();
 
         $result = $api->str('metadata', 'extract');
         return (is_string($result) && trim($result) !== '') ? $result : parent::detect();
