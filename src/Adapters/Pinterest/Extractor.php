@@ -5,11 +5,11 @@ namespace Embed\Adapters\Pinterest;
 
 use Embed\Extractor as Base;
 
+/**
+ * @template-extends Base<\Embed\Detectors\Detector<self>>
+ */
 class Extractor extends Base
 {
-    /**
-     * @return array<string, \Embed\Detectors\Detector>
-     */
     public function createCustomDetectors(): array
     {
         return [

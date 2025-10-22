@@ -5,6 +5,10 @@ namespace Embed\Detectors;
 
 use function Embed\isEmpty;
 
+/**
+ * @template TExtractor of \Embed\Extractor
+ * @template-extends Detector<TExtractor>
+ */
 class Languages extends Detector
 {
     /**

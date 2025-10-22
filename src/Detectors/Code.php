@@ -6,6 +6,10 @@ namespace Embed\Detectors;
 use Embed\EmbedCode;
 use function Embed\html;
 
+/**
+ * @template TExtractor of \Embed\Extractor
+ * @template-extends Detector<TExtractor>
+ */
 class Code extends Detector
 {
     public function detect(): ?EmbedCode

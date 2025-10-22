@@ -3,6 +3,10 @@ declare(strict_types = 1);
 
 namespace Embed\Detectors;
 
+/**
+ * @template TExtractor of \Embed\Extractor
+ * @template-extends Detector<TExtractor>
+ */
 class Feeds extends Detector
 {
     /** @var string[] */

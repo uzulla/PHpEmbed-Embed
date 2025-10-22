@@ -53,6 +53,8 @@ use Psr\Http\Message\UriInterface;
  * @property UriInterface|null    $redirect
  * @property string|null          $title
  * @property UriInterface         $url
+ *
+ * @template TDetector of Detector = Detector
  */
 class Extractor
 {
@@ -68,27 +70,45 @@ class Extractor
 
     /** @var array<string, mixed> */
     private array $settings = [];
-    /** @var array<string, Detectors\Detector> */
+    /** @var array<string, Detectors\Detector<$this>> */
     private array $customDetectors = [];
-
+    /** @var AuthorName<$this> */
     protected AuthorName $authorName;
+    /** @var AuthorUrl<$this> */
     protected AuthorUrl $authorUrl;
+    /** @var Cms<$this> */
     protected Cms $cms;
+    /** @var Code<$this> */
     protected Code $code;
+    /** @var Description<$this> */
     protected Description $description;
+    /** @var Favicon<$this> */
     protected Favicon $favicon;
+    /** @var Feeds<$this> */
     protected Feeds $feeds;
+    /** @var Icon<$this> */
     protected Icon $icon;
+    /** @var Image<$this> */
     protected Image $image;
+    /** @var Keywords<$this> */
     protected Keywords $keywords;
+    /** @var Language<$this> */
     protected Language $language;
+    /** @var Languages<$this> */
     protected Languages $languages;
+    /** @var License<$this> */
     protected License $license;
+    /** @var ProviderName<$this> */
     protected ProviderName $providerName;
+    /** @var ProviderUrl<$this> */
     protected ProviderUrl $providerUrl;
+    /** @var PublishedTime<$this> */
     protected PublishedTime $publishedTime;
+    /** @var Redirect<$this> */
     protected Redirect $redirect;
+    /** @var Title<$this> */
     protected Title $title;
+    /** @var Url<$this> */
     protected Url $url;
 
     public function __construct(UriInterface $uri, RequestInterface $request, ResponseInterface $response, Crawler $crawler)
@@ -150,13 +170,16 @@ class Extractor
     }
 
     /**
-     * @return array<string, Detector>
+     * @return array<string, TDetector>
      */
     public function createCustomDetectors(): array
     {
         return [];
     }
 
+    /**
+     * @phpstan-param Detector<$this> $detector
+     */
     public function addDetector(string $name, Detector $detector): void
     {
         $this->customDetectors[$name] = $detector;

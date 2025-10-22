@@ -8,6 +8,9 @@ use Embed\EmbedCode;
 use function Embed\html;
 use function Embed\matchPath;
 
+/**
+ * @extends Detector<\Embed\Adapters\Github\Extractor>
+ */
 class Code extends Detector
 {
     public function detect(): ?EmbedCode

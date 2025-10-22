@@ -5,6 +5,10 @@ namespace Embed\Detectors;
 
 use DateTime;
 
+/**
+ * @template TExtractor of \Embed\Extractor
+ * @template-extends Detector<TExtractor>
+ */
 class PublishedTime extends Detector
 {
     public function detect(): ?DateTime

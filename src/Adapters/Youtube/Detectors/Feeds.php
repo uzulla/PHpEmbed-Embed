@@ -8,6 +8,9 @@ use function Embed\getDirectory;
 use function Embed\matchPath;
 use Psr\Http\Message\UriInterface;
 
+/**
+ * @extends Detector<\Embed\Adapters\Youtube\Extractor>
+ */
 class Feeds extends Detector
 {
     /**

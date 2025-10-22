@@ -7,11 +7,13 @@ use Embed\Adapters\Twitter\Extractor;
 use Embed\Detectors\AuthorUrl as Detector;
 use Psr\Http\Message\UriInterface;
 
+/**
+ * @extends Detector<\Embed\Adapters\Twitter\Extractor>
+ */
 class AuthorUrl extends Detector
 {
     public function detect(): ?UriInterface
     {
-        /** @var Extractor $extractor */
         $extractor = $this->extractor;
         $api = $extractor->getApi();
         $username = $api->str('includes', 'users', '0', 'username');

@@ -5,6 +5,9 @@ namespace Embed\Adapters\Facebook\Detectors;
 
 use Embed\Detectors\Title as Detector;
 
+/**
+ * @extends Detector<\Embed\Adapters\Facebook\Extractor>
+ */
 class Title extends Detector
 {
     /**

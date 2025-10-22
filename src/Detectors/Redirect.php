@@ -5,6 +5,10 @@ namespace Embed\Detectors;
 
 use Psr\Http\Message\UriInterface;
 
+/**
+ * @template TExtractor of \Embed\Extractor
+ * @template-extends Detector<TExtractor>
+ */
 class Redirect extends Detector
 {
     public function detect(): ?UriInterface
