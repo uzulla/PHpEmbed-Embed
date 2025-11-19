@@ -26,7 +26,6 @@ class PagesTest extends PagesTestCase
             ['https://animoto.com/play/GjsJ1gu0WDRfr4pGw12xZQ'],
             ['http://live.amcharts.com/czNjJ'],
             ['https://www.aol.com/video/view/pile-of-recovering-foster-kittens-is-purrfect/595fe75985eb42109b69bedb/'],
-            ['http://jeanjean.bandcamp.com/track/coquin-l-l-phant'],
             ['http://chirb.it/7A9L9B'],
             ['http://codepen.io/Zhouzi/pen/JoRazP'],
             ['http://www.dailymotion.com/video/xy0wd'],
@@ -78,6 +77,14 @@ class PagesTest extends PagesTestCase
     public function testVideoFile()
     {
         $this->assertEmbed('http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4');
+    }
+
+    public function testBandcamp()
+    {
+        // Test track URL
+        $this->assertEmbed('http://jeanjean.bandcamp.com/track/coquin-l-l-phant');
+        // Test album URL
+        $this->assertEmbed('https://go-qualia.bandcamp.com/album/mental-sketch-schizoid-iii');
     }
 
     public function testSnipplr()
