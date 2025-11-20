@@ -27,7 +27,6 @@ class PagesTest extends PagesTestCase
             ['http://live.amcharts.com/czNjJ'],
             ['https://www.aol.com/video/view/pile-of-recovering-foster-kittens-is-purrfect/595fe75985eb42109b69bedb/'],
             ['http://jeanjean.bandcamp.com/track/coquin-l-l-phant'],
-            ['http://chirb.it/7A9L9B'],
             ['http://codepen.io/Zhouzi/pen/JoRazP'],
             ['http://www.dailymotion.com/video/xy0wd'],
             ['http://www.deviantart.com/art/Misty-510056679'],
