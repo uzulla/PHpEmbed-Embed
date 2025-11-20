@@ -65,6 +65,8 @@
     "scripts": {
         "demo": "php -S localhost:8888 demo/index.php",
         "test": "phpunit",
+        "coverage": "phpunit --coverage-text",
+        "coverage-report": "phpunit --coverage-html coverage-html",
         "cs-fix": "php-cs-fixer fix",
         "phpstan": "phpstan --memory-limit=-1",
         "update-resources": [

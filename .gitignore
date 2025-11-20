@@ -1,6 +1,7 @@
 *.cache
 *.code-workspace
 composer.lock
+coverage-html
 env.php
 phpunit.xml
 vendor
