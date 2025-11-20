@@ -24,7 +24,6 @@ class ExtractorFactory
         'github.com' => Adapters\Github\Extractor::class,
         'wikipedia.org' => Adapters\Wikipedia\Extractor::class,
         'archive.org' => Adapters\Archive\Extractor::class,
-        'sassmeister.com' => Adapters\Sassmeister\Extractor::class,
         'facebook.com' => Adapters\Facebook\Extractor::class,
         'instagram.com' => Adapters\Instagram\Extractor::class,
         'imageshack.com' => Adapters\ImageShack\Extractor::class,

@@ -84,11 +84,6 @@ class PagesTest extends PagesTestCase
         $this->assertEmbed('http://snipplr.com/view/72914/better-html-5-basic-starter-template');
     }
 
-    public function testSassmeister()
-    {
-        $this->assertEmbed('http://sassmeister.com/gist/1122e441f0434ec6eb2a');
-    }
-
     public function testImageShack()
     {
         $this->assertEmbed('https://imageshack.com/i/ip7wO0v7j');
