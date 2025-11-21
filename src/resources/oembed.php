@@ -181,9 +181,6 @@ return [
     'http://embed.chartblocks.com/1.0/oembed' => [
         '|^https?://public\\.chartblocks\\.com/c/.*$|i',
     ],
-    'http://chirb.it/oembed.json' => [
-        '|^https?://chirb\\.it/.*$|i',
-    ],
     'https://chroco.ooo/embed' => [
         '|^https?://chroco\\.ooo/mypage/.*$|i',
         '|^https?://chroco\\.ooo/story/.*$|i',
